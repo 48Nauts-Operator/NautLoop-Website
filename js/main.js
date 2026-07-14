@@ -30,13 +30,15 @@ document.getElementById('ea-form').addEventListener('submit', async (e) => {
     document.getElementById('ea-form').innerHTML =
       '<p class="mono" style="color:var(--accent-text);font-size:15px;">✓ You\'re on the list — we onboard in small waves and will be in touch.</p>';
   } catch {
-    // Worker not deployed yet (or offline) — fall back to a prefilled email
-    status.textContent = 'Opening your mail app instead…';
+    // Worker not live (or offline) — visible fallback, never a dead button
     const body = encodeURIComponent(
       'Name: ' + name + '\nEmail: ' + email + '\n\nWhat I want to run on it:\n' + why
     );
-    window.location.href = 'mailto:join@nautlense.com?subject=' +
+    const href = 'mailto:join@nautlense.com?subject=' +
       encodeURIComponent('NautLoop early access') + '&body=' + body;
+    status.innerHTML = 'Direct submit isn\'t live yet — ' +
+      '<a href="' + href + '" style="color:var(--accent-text)">click here to send your signup by email</a> ' +
+      '(prefilled), or write to join@nautlense.com.';
     btn.disabled = false;
   }
 });
