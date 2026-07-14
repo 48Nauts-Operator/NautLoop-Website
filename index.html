@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Swarms of isolated AI agents in EU-hosted microVMs. BYO Max plan. EU data residency.">
   <meta name="twitter:image" content="https://nautloop.com/assets/og.png">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style.css?v=5">
+  <link rel="stylesheet" href="css/style.css?v=6">
   <script defer src="https://wave.21nauts.com/script.js" data-website-id="6d8ce0ae-9b54-4ba2-931f-3f5d54a3eb39"></script>
   <script>
     // Apply saved/system theme before paint to avoid flash
@@ -148,8 +148,29 @@
   </div>
 </section>
 
+<section class="section compare" id="compare">
+  <p class="kicker mono">03 — HOW IT COMPARES</p>
+  <h2>Isolation and coordination, together.</h2>
+  <p class="lead">Frameworks give you coordination without isolation. Infrastructure gives you isolation without coordination. Single-agent products give you neither at scale. The combination is the product.</p>
+  <div class="table-wrap">
+    <table class="cmp mono">
+      <thead>
+        <tr><th></th><th class="me">NautLoop</th><th>AutoGen · CrewAI · LangGraph</th><th>Kubernetes</th><th>Devin · Composer</th><th>Hosted monoliths</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Kernel-level isolation per agent</td><td class="me">✓ microVM each</td><td>one process</td><td>✓ containers</td><td>—</td><td>—</td></tr>
+        <tr><td>Agents in parallel</td><td class="me">✓ swarms</td><td>✓ in-process</td><td>✓</td><td>one at a time</td><td>one at a time</td></tr>
+        <tr><td>Agent-native coordination</td><td class="me">✓ signed mesh</td><td>shared memory</td><td>—</td><td>—</td><td>internal only</td></tr>
+        <tr><td>BYO subscription</td><td class="me">✓ your Max plan</td><td>your keys</td><td>n/a</td><td>—</td><td>their tokens</td></tr>
+        <tr><td>Persistent per-tenant memory</td><td class="me">✓ optional Engram</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><td>EU data residency by default</td><td class="me">✓</td><td>self-managed</td><td>self-managed</td><td>—</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
 <section class="section pricing" id="pricing">
-  <p class="kicker mono">03 — PRICING</p>
+  <p class="kicker mono">04 — PRICING</p>
   <h2>Priced per orchestration, not per compute-second.</h2>
   <p class="lead center">A swarm is one task's team — a Lead plus its specialists, alive only for that task. One intent through the full lifecycle = one orchestration. All tiers: BYO keys, signed audit trail, EU residency.</p>
   <div class="tiers">

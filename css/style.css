@@ -204,3 +204,15 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.02em; 
 [data-theme="dark"] .ea-check { background: #2BB673; }
 
 .btn-soon { opacity: .55; cursor: default; pointer-events: none; font-family: 'JetBrains Mono', monospace; font-size: 13px !important; letter-spacing: .04em; }
+
+/* comparison table */
+.compare .lead { margin-bottom: 8px; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; background: var(--tint); margin-top: 40px; }
+.cmp { width: 100%; border-collapse: collapse; font-size: 13px; }
+.cmp th, .cmp td { padding: 15px 12px; text-align: center; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.cmp tbody tr:last-child td { border-bottom: none; }
+.cmp td:first-child { text-align: left; padding-left: 24px; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; color: var(--ink); min-width: 200px; white-space: normal; }
+.cmp th { font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 600; color: var(--soft); padding: 17px 12px; white-space: normal; }
+.cmp td { color: var(--faint); }
+.cmp .me { background: var(--card); color: var(--accent-text); font-weight: 600; border-left: 1px solid var(--line); border-right: 1px solid var(--line); }
+.cmp th.me { color: var(--accent-text); font-weight: 700; border-top: 2px solid var(--accent); }
