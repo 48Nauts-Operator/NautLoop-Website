@@ -179,3 +179,10 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.02em; 
 .legal a { color: var(--accent-text); }
 .legal .tldr { background: var(--tint); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 10px; padding: 20px 24px; margin-bottom: 40px; }
 .legal .tldr p { margin: 0; color: var(--ink); }
+
+/* early-access form */
+.ea-form { display: flex; gap: 12px; padding-top: 8px; width: min(520px, 100%); }
+.ea-form input { flex: 1; padding: 14px 18px; border: 1px solid var(--border); border-radius: 10px; background: var(--card); color: var(--ink); font-family: 'Inter', sans-serif; font-size: 15px; outline: none; }
+.ea-form input:focus { border-color: var(--accent); }
+.ea-form input::placeholder { color: var(--faint); }
+@media (max-width: 720px) { .ea-form { flex-direction: column; } }
