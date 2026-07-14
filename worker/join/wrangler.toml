@@ -3,7 +3,7 @@ main = "src/index.js"
 compatibility_date = "2026-07-01"
 
 routes = [
-  { pattern = "nautloop.com/api/join", zone_name = "nautloop.com" }
+  { pattern = "nautloop.com/api/join*", zone_name = "nautloop.com" }
 ]
 
 [[kv_namespaces]]

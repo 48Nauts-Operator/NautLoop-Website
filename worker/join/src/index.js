@@ -2,12 +2,25 @@
 // Read them: npx wrangler kv key list --namespace-id <id>  (or the CF dashboard)
 export default {
   async fetch(request, env) {
-    if (request.method === 'GET' && new URL(request.url).searchParams.get('check') === '1') {
-      // self-test: write + read back in one invocation
-      await env.JOIN_KV.put('self-test', 'ok-' + Date.now());
-      const v = await env.JOIN_KV.get('self-test');
-      const last = await env.JOIN_KV.get('last-join');
-      return json({ selfTest: v, lastJoin: last ? JSON.parse(last).email : null });
+    const url = new URL(request.url);
+
+    // Admin: list/read/delete signups. Auth via ADMIN_KEY secret.
+    if (url.pathname === '/api/join/admin') {
+      const auth = request.headers.get('Authorization') || '';
+      if (!env.ADMIN_KEY || auth !== `Bearer ${env.ADMIN_KEY}`) return json({ error: 'unauthorized' }, 401);
+      const del = url.searchParams.get ? null : null; // query strings unreliable on this route — use POST body
+      if (request.method === 'POST') {
+        let cmd = {};
+        try { cmd = await request.json(); } catch {}
+        if (cmd.action === 'delete' && cmd.key) { await env.JOIN_KV.delete(cmd.key); return json({ deleted: cmd.key }); }
+      }
+      const list = await env.JOIN_KV.list({ prefix: 'join:' });
+      const entries = [];
+      for (const k of list.keys) {
+        const v = await env.JOIN_KV.get(k.name);
+        entries.push({ key: k.name, ...(v ? JSON.parse(v) : {}) });
+      }
+      return json({ count: entries.length, entries });
     }
     if (request.method !== 'POST') return new Response('not found', { status: 404 });
     let data;

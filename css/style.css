@@ -134,14 +134,14 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.02em; 
 /* pricing */
 .pricing { text-align: center; }
 .pricing h2 { margin-left: auto; margin-right: auto; }
-.tiers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 40px; text-align: left; }
+.tiers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 40px; text-align: left; max-width: 1240px; margin-left: auto; margin-right: auto; }
 .tier { display: flex; flex-direction: column; gap: 14px; padding: 28px; border: 1px solid var(--line); border-radius: 14px; }
 .tier-hl { border: 2px solid var(--accent); background: var(--tint); }
 .tier h3 { font-size: 17px; font-weight: 600; }
 .tier-head { display: flex; align-items: center; justify-content: space-between; }
 .badge-pop { font-size: 10px; font-weight: 600; color: #FFFFFF; background: var(--accent); border-radius: 999px; padding: 3px 10px; letter-spacing: .06em; }
 .price { display: flex; align-items: baseline; gap: 6px; }
-.price b { font-family: 'Space Grotesk', sans-serif; font-size: 36px; font-weight: 700; }
+.price b { font-family: 'Space Grotesk', sans-serif; font-size: 36px; font-weight: 700; letter-spacing: -0.02em; }
 .price span { font-size: 14px; color: var(--muted); }
 .tier p { font-size: 14px; color: var(--soft); line-height: 1.64; }
 .tier .btn { margin-top: auto; padding: 10px; font-size: 14px; }
@@ -202,3 +202,5 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.02em; 
 .ea-check { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 50%; background: #1FA060; color: #fff; font-size: 14px; flex-shrink: 0; }
 [data-theme="dark"] .ea-success { border-color: #2BB673; color: #3DD68C; background: rgba(61,214,140,0.08); }
 [data-theme="dark"] .ea-check { background: #2BB673; }
+
+.btn-soon { opacity: .55; cursor: default; pointer-events: none; font-family: 'JetBrains Mono', monospace; font-size: 13px !important; letter-spacing: .04em; }
