@@ -30,16 +30,7 @@ document.getElementById('ea-form').addEventListener('submit', async (e) => {
     document.getElementById('ea-form').innerHTML =
       '<div class="ea-success"><span class="ea-check">✓</span> You\'re on the list — we will be in touch.</div>';
   } catch {
-    // Worker not live (or offline) — visible fallback, never a dead button
-    const body = encodeURIComponent(
-      'Name: ' + name + '\nEmail: ' + email + '\n\nWhat I want to run on it:\n' + why
-    );
-    const href = 'mailto:join@nautlense.com?subject=' +
-      encodeURIComponent('NautLoop early access') + '&body=' + body;
-    window.location.href = href;
-    status.innerHTML = '✓ Almost done — send the prefilled email that just opened. ' +
-      'Nothing opened? <a href="' + href + '" style="color:var(--accent-text)">Click here</a> ' +
-      'or write to join@nautlense.com.';
+    status.textContent = 'Something went wrong — please try again in a minute.';
     btn.disabled = false;
   }
 });
