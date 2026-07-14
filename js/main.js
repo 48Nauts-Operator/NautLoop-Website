@@ -28,7 +28,7 @@ document.getElementById('ea-form').addEventListener('submit', async (e) => {
     });
     if (!res.ok) throw new Error('endpoint ' + res.status);
     document.getElementById('ea-form').innerHTML =
-      '<p class="mono" style="color:var(--accent-text);font-size:15px;">✓ You\'re on the list — we onboard in small waves and will be in touch.</p>';
+      '<div class="ea-success"><span class="ea-check">✓</span> You\'re on the list — we will be in touch.</div>';
   } catch {
     // Worker not live (or offline) — visible fallback, never a dead button
     const body = encodeURIComponent(

@@ -196,3 +196,9 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.02em; 
 .ea-form input:focus { border-color: var(--accent); }
 .ea-form input::placeholder { color: var(--faint); }
 @media (max-width: 720px) { .ea-form { flex-direction: column; } }
+
+/* form success state */
+.ea-success { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 18px 24px; border: 1px solid #1FA060; border-radius: 12px; background: rgba(31,160,96,0.08); color: #1FA060; font-family: 'Space Grotesk', sans-serif; font-size: 17px; font-weight: 600; }
+.ea-check { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 50%; background: #1FA060; color: #fff; font-size: 14px; flex-shrink: 0; }
+[data-theme="dark"] .ea-success { border-color: #2BB673; color: #3DD68C; background: rgba(61,214,140,0.08); }
+[data-theme="dark"] .ea-check { background: #2BB673; }

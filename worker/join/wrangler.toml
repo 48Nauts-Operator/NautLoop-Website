@@ -8,4 +8,4 @@ routes = [
 
 [[kv_namespaces]]
 binding = "JOIN_KV"
-id = "REPLACED_AT_DEPLOY"
+id = "b5ac47653f444049b5960bb84880cc15"
