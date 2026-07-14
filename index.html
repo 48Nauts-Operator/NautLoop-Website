@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NautLoop — The autonomous team-in-a-box</title>
+  <meta name="description" content="Give NautLoop a complex task — ship a release, research a market, refactor a codebase. A swarm of isolated agents convenes in EU-hosted microVMs, works in parallel, delivers, and dissolves. BYO Max plan.">
+  <link rel="canonical" href="https://nautloop.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NautLoop">
+  <meta property="og:title" content="NautLoop — The autonomous team-in-a-box">
+  <meta property="og:description" content="Swarms of isolated AI agents in EU-hosted microVMs. Your subscription powers it. Your laptop stays cold.">
+  <meta property="og:url" content="https://nautloop.com/">
+  <meta property="og:image" content="https://nautloop.com/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NautLoop — The autonomous team-in-a-box">
+  <meta name="twitter:description" content="Swarms of isolated AI agents in EU-hosted microVMs. BYO Max plan. EU data residency.">
+  <meta name="twitter:image" content="https://nautloop.com/assets/og.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css?v=1">
+  <script>
+    // Apply saved/system theme before paint to avoid flash
+    (function () {
+      var t = localStorage.getItem('nl-theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="logo" href="/">
+    <span class="logo-mark">∞</span>
+    <span class="logo-name">NautLoop</span>
+  </a>
+  <div class="nav-links">
+    <a href="#how">How it works</a>
+    <a href="#pillars">Platform</a>
+    <a href="#pricing">Pricing</a>
+  </div>
+  <div class="nav-actions">
+    <a class="icon-btn" href="https://x.com/nautloop" aria-label="NautLoop on X">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    </a>
+    <button class="icon-btn theme-toggle" aria-label="Toggle theme">
+      <svg class="ic-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="ic-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
+    <a class="btn btn-primary btn-sm" href="mailto:hello@nautloop.com?subject=NautLoop%20early%20access">Join early access</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="pill mono"><span class="dot"></span>EU-hosted · BYO Max plan · early access</div>
+  <h1>The autonomous team-in-a-box.</h1>
+  <p class="sub">Give it a complex task — ship a release, research a market, refactor a codebase. A swarm of isolated agents convenes, works in parallel, delivers, and dissolves. Your subscription powers it, your laptop stays cold, and with memory on, every task makes the next one sharper.</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="mailto:hello@nautloop.com?subject=NautLoop%20early%20access">Join early access</a>
+    <span class="btn btn-ghost mono">npm i -g @nautloop/cli</span>
+  </div>
+  <p class="footnote">Rolling out now · no credit card · GDPR &amp; Swiss DSG compliant by default</p>
+
+  <div class="swarm">
+    <div class="swarm-head">
+      <span class="mono cmd"><b>$</b> nautloop ask "cut release v1.4 — changelog, build, test, publish"</span>
+      <span class="mono status"><span class="dot"></span>swarm running · 4 specialists · 00:41</span>
+    </div>
+    <div class="swarm-canvas">
+      <svg width="1040" height="330" viewBox="0 0 1040 330" fill="none">
+        <g stroke="var(--mesh)" stroke-width="1.5">
+          <path d="M300 165 L560 62"/><path d="M300 165 L560 133"/>
+          <path d="M300 165 L560 204"/><path d="M300 165 L560 275"/>
+        </g>
+        <g fill="var(--mesh-dot)">
+          <circle cx="410" cy="122" r="3.5"/><circle cx="455" cy="145" r="3.5"/><circle cx="430" cy="217" r="3.5"/>
+        </g>
+        <rect x="120" y="115" width="180" height="100" rx="12" fill="var(--accent-strong)"/>
+        <text x="210" y="147" fill="#FFFFFF" class="sg" font-size="16" font-weight="600" text-anchor="middle">Lead</text>
+        <text x="210" y="169" fill="var(--on-accent-dim)" class="jb" font-size="11" text-anchor="middle">decompose · dispatch</text>
+        <text x="210" y="189" fill="var(--on-accent-dim)" class="jb" font-size="11" text-anchor="middle">sandbox vm-7f21 · 2s boot</text>
+        <g class="jb" font-size="11">
+          <rect x="560" y="30" width="260" height="62" rx="10" fill="var(--card)" stroke="var(--border)"/>
+          <circle cx="582" cy="61" r="4" fill="var(--accent-text)"/>
+          <text x="598" y="56" fill="var(--ink)" font-size="13">changelog-writer</text>
+          <text x="598" y="76" fill="var(--faint)">vm-a3c8 · repo access only</text>
+          <rect x="560" y="102" width="260" height="62" rx="10" fill="var(--card)" stroke="var(--border)"/>
+          <circle cx="582" cy="133" r="4" fill="var(--accent-text)"/>
+          <text x="598" y="128" fill="var(--ink)" font-size="13">release-builder</text>
+          <text x="598" y="148" fill="var(--faint)">vm-99d1 · build env</text>
+          <rect x="560" y="174" width="260" height="62" rx="10" fill="var(--card)" stroke="var(--border)"/>
+          <circle cx="582" cy="205" r="4" fill="var(--mesh)"/>
+          <text x="598" y="200" fill="var(--ink)" font-size="13">e2e-runner</text>
+          <text x="598" y="220" fill="var(--faint)">vm-04be · playwright · done ✓</text>
+          <rect x="560" y="246" width="260" height="62" rx="10" fill="var(--card)" stroke="var(--border)"/>
+          <circle cx="582" cy="277" r="4" fill="#F5A623"/>
+          <text x="598" y="272" fill="var(--ink)" font-size="13">publisher</text>
+          <text x="598" y="292" fill="var(--faint)">vm-e56a · gated · awaiting approval</text>
+        </g>
+        <rect x="120" y="252" width="180" height="52" rx="10" fill="var(--tint)" stroke="var(--border)"/>
+        <text x="210" y="274" fill="var(--accent-text)" class="jb" font-size="11" text-anchor="middle">⌬ Engram memory · optional</text>
+        <text x="210" y="292" fill="var(--faint)" class="jb" font-size="11" text-anchor="middle">3 prior releases loaded</text>
+        <path d="M210 252 L210 215" stroke="var(--mesh)" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <rect x="880" y="133" width="140" height="64" rx="10" fill="var(--card)" stroke="var(--accent-strong)"/>
+        <text x="950" y="160" fill="var(--accent-text)" class="sg" font-size="13" font-weight="600" text-anchor="middle">v1.4 shipped</text>
+        <text x="950" y="180" fill="var(--faint)" class="jb" font-size="11" text-anchor="middle">→ tag · notes · installers</text>
+        <path d="M820 165 L878 165" stroke="var(--accent-strong)" stroke-width="1.5"/>
+        <polygon points="878,161 878,169 884,165" fill="var(--accent-strong)"/>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<section class="stats">
+  <div class="stat"><b>~2 s</b><span>to boot an isolated microVM sandbox</span></div>
+  <div class="stat"><b>10×</b><span>agents in parallel, not one at a time</span></div>
+  <div class="stat"><b class="accent">BYO</b><span>your choice, your plan — zero extra token spend</span></div>
+  <div class="stat"><b>EU</b><span>data residency — Falkenstein &amp; Helsinki, GDPR by default</span></div>
+</section>
+
+<section class="section" id="how">
+  <p class="kicker mono">01 — HOW IT WORKS</p>
+  <h2>Every task is the same loop. Only the specialists change.</h2>
+  <div class="steps">
+    <div class="step"><span class="mono sl">1 · CONVENE</span><p>A Lead sandbox spawns. Its only job: decompose your intent and dispatch.</p></div>
+    <div class="step"><span class="mono sl">2 · DISPATCH</span><p>Specialists spawn with narrowly-scoped access — repo, database, or web. Nothing more.</p></div>
+    <div class="step"><span class="mono sl">3 · EXECUTE</span><p>Each agent works in its own Firecracker VM. Coordination only via signed mesh messages.</p></div>
+    <div class="step"><span class="mono sl">4 · SYNTHESIZE</span><p>The Lead collects contributions, resolves contradictions, fills gaps with round-2 agents.</p></div>
+    <div class="step"><span class="mono sl">5 · DELIVER</span><p>Push, PR, email, document, or screen recording — the artifact comes to you.</p></div>
+    <div class="step step-dark"><span class="mono sl">6 · PERSIST + DISSOLVE</span><p>Sandboxes die. With optional Engram memory on, next time half the work is already done.</p></div>
+  </div>
+</section>
+
+<section class="section" id="pillars">
+  <p class="kicker mono">02 — THE FOUR PILLARS</p>
+  <h2>Production infrastructure, not a beta test.</h2>
+  <p class="lead">NautLoop packages infrastructure 48Nauts has run internally for over a year. Every layer below is in production today.</p>
+  <div class="pillars">
+    <div class="pillar"><span class="mono pn">xNaut</span><h3>Orchestration brain</h3><p>Visual Loop Designer, agent dispatcher, doc vault, proof-of-work session logs.</p></div>
+    <div class="pillar"><span class="mono pn">NautLoop Core</span><h3>Isolated compute</h3><p>Firecracker microVMs on EU hardware; sub-two-second boot; template-based agents.</p></div>
+    <div class="pillar"><span class="mono pn">Engram</span><h3>Mesh + memory</h3><p>Signed peer-to-peer agent messaging; optional per-tenant knowledge that compounds.</p></div>
+    <div class="pillar"><span class="mono pn">NautGate</span><h3>LLM gateway</h3><p>Provider abstraction, observability, per-tenant metering and cost tracking.</p></div>
+  </div>
+</section>
+
+<section class="section pricing" id="pricing">
+  <p class="kicker mono">03 — PRICING</p>
+  <h2>Priced per orchestration, not per compute-second.</h2>
+  <p class="lead center">A swarm is one task's team — a Lead plus its specialists, alive only for that task. One intent through the full lifecycle = one orchestration. All tiers: BYO keys, signed audit trail, EU residency.</p>
+  <div class="tiers">
+    <div class="tier">
+      <h3>Starter</h3>
+      <div class="price"><b>30</b><span>CHF / mo</span></div>
+      <p>20 orchestrations / mo<br>1 concurrent swarm · up to 5 agents<br>Try it out</p>
+      <a class="btn btn-ghost" href="mailto:hello@nautloop.com?subject=NautLoop%20early%20access%20—%20Starter">Join early access</a>
+    </div>
+    <div class="tier tier-hl">
+      <div class="tier-head"><h3>Plus</h3><span class="mono badge-pop">POPULAR</span></div>
+      <div class="price"><b>100</b><span>CHF / mo</span></div>
+      <p>100 orchestrations / mo<br>2 concurrent swarms · up to 10 agents each<br>Solo developer / researcher</p>
+      <a class="btn btn-primary" href="mailto:hello@nautloop.com?subject=NautLoop%20early%20access%20—%20Plus">Join early access</a>
+    </div>
+    <div class="tier">
+      <h3>Team</h3>
+      <div class="price"><b>400</b><span>CHF / mo</span></div>
+      <p>500 orchestrations, shared<br>4 concurrent swarms · up to 10 agents each<br>Small team</p>
+      <a class="btn btn-ghost" href="mailto:hello@nautloop.com?subject=NautLoop%20early%20access%20—%20Team">Join early access</a>
+    </div>
+    <div class="tier">
+      <h3>Business</h3>
+      <div class="price"><b>1,500</b><span>CHF / mo</span></div>
+      <p>Unlimited orchestrations<br>8+ swarms · up to 20 agents each · SSO · DPA<br>Company / enterprise</p>
+      <a class="btn btn-ghost" href="mailto:hello@nautloop.com?subject=NautLoop%20—%20Business%20tier">Talk to us</a>
+    </div>
+  </div>
+  <p class="fine">Launch pricing · no setup fee · monthly, cancel anytime · self-hosted enterprise option on request</p>
+</section>
+
+<section class="section final">
+  <p class="mono dim">$ nautloop ask "ship it"</p>
+  <h2>Your team is one question away.</h2>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="mailto:hello@nautloop.com?subject=NautLoop%20early%20access">Join early access</a>
+    <a class="btn btn-ghost" href="mailto:hello@nautloop.com">Contact us</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="logo">
+    <span class="logo-mark sm">∞</span>
+    <span class="fine">© 2026 48Nauts, Switzerland · Infrastructure in Falkenstein &amp; Helsinki</span>
+  </div>
+  <div class="footer-links">
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+    <a href="https://x.com/nautloop">𝕏 @nautloop</a>
+    <a href="mailto:hello@nautloop.com">hello@nautloop.com</a>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "NautLoop",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Web, CLI (macOS, Linux)",
+  "description": "Hosted platform for running swarms of AI agents in isolated EU-hosted microVMs, coordinated through a signed mesh, with optional persistent memory. Bring your own AI subscription.",
+  "url": "https://nautloop.com/",
+  "offers": [
+    { "@type": "Offer", "name": "Starter", "price": "30", "priceCurrency": "CHF" },
+    { "@type": "Offer", "name": "Plus", "price": "100", "priceCurrency": "CHF" },
+    { "@type": "Offer", "name": "Team", "price": "400", "priceCurrency": "CHF" },
+    { "@type": "Offer", "name": "Business", "price": "1500", "priceCurrency": "CHF" }
+  ],
+  "author": { "@type": "Organization", "name": "48Nauts", "url": "https://48nauts.com" }
+}
+</script>
+</body>
+</html>

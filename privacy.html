@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — NautLoop</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css?v=1">
+  <script>(function(){var t=localStorage.getItem('nl-theme');if(!t)t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();</script>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="logo" href="/"><span class="logo-mark">∞</span><span class="logo-name">NautLoop</span></a>
+  <div class="nav-actions"><a href="/" style="font-size:14px;color:var(--muted);">← nautloop.com</a></div>
+</nav>
+
+<main class="legal">
+  <h1>Privacy Policy</h1>
+  <span class="updated">Last updated: 2026-07-14 · early-access phase</span>
+
+  <div class="tldr">
+    <p><strong>TL;DR:</strong> Your task content lives only inside your isolated sandboxes and your tenant-scoped storage — our staff cannot read it. Everything runs on EU infrastructure. This website sets no cookies and runs no analytics. During early access, the only personal data we hold is the email you send us.</p>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>NautLoop is built and operated by 48Nauts, André Wolke, Switzerland. Contact: <a href="mailto:hello@nautloop.com">hello@nautloop.com</a>.</p>
+
+  <h2>This website (nautloop.com)</h2>
+  <ul>
+    <li><strong>No cookies, no analytics, no trackers.</strong> The theme preference is stored in your browser's localStorage and never transmitted.</li>
+    <li>The site is static, hosted on GitHub Pages and served through Cloudflare. Like any web host, both may log basic technical data (such as your IP address) to operate and secure the service — see the <a href="https://docs.github.com/privacy">GitHub Privacy Statement</a> and <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>. We do not receive or store these logs.</li>
+    <li><strong>Early access:</strong> joining is a plain email to us. We use your address to correspond about NautLoop and for nothing else; ask and it's deleted.</li>
+  </ul>
+
+  <h2>The NautLoop platform</h2>
+  <p>These principles are engineering commitments for the hosted service:</p>
+  <ul>
+    <li><strong>Sandbox isolation.</strong> Task content — code, prompts, documents, data — lives inside your Firecracker sandboxes, which are destroyed at task end. Anything sensitive touched during a task exists only in the sandbox that touched it.</li>
+    <li><strong>No staff access to your content.</strong> Session recordings and artifacts are stored in tenant-scoped storage under your control, with retention you configure.</li>
+    <li><strong>Your keys, your providers.</strong> AI subscriptions (Anthropic, OpenAI, others) are yours; prompts go from your sandbox to your chosen provider under that provider's privacy policy. Your OAuth tokens travel encrypted into your sandbox only and die with it.</li>
+    <li><strong>EU data residency.</strong> All sandboxes run on dedicated infrastructure in Falkenstein (Germany) and Helsinki (Finland). No data transits US infrastructure unless your chosen LLM provider does.</li>
+    <li><strong>Signed audit trail.</strong> Mesh messages and task events are signed and logged for your audit purposes — that log belongs to your tenant.</li>
+    <li><strong>Memory is optional.</strong> Engram per-tenant memory is off unless you turn it on; it is isolated per organization, exportable, and deletable.</li>
+  </ul>
+
+  <h2>Your rights</h2>
+  <p>Under the Swiss FADP and the GDPR you may access, correct, export, and delete your personal data. During early access that means: email us and we act on it. A standard DPA is available on request; custom DPAs and sector-specific addenda come with the Business tier.</p>
+
+  <h2>Changes</h2>
+  <p>Updates appear on this page with a new date. This policy will grow more detailed as the platform onboards users — materially so before general availability.</p>
+</main>
+
+<footer class="footer">
+  <div class="logo"><span class="logo-mark sm">∞</span><span class="fine">© 2026 48Nauts, Switzerland</span></div>
+  <div class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="mailto:hello@nautloop.com">hello@nautloop.com</a></div>
+</footer>
+
+</body>
+</html>
