@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Swarms of isolated AI agents in EU-hosted microVMs. BYO Max plan. EU data residency.">
   <meta name="twitter:image" content="https://nautloop.com/assets/og.png">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style.css?v=1">
+  <link rel="stylesheet" href="css/style.css?v=2">
   <script defer src="https://wave.21nauts.com/script.js" data-website-id="6d8ce0ae-9b54-4ba2-931f-3f5d54a3eb39"></script>
   <script>
     // Apply saved/system theme before paint to avoid flash
@@ -183,11 +183,17 @@
 <section class="section final" id="join">
   <p class="mono dim">$ nautloop ask "ship it"</p>
   <h2>Your team is one question away.</h2>
-  <form class="ea-form" id="ea-form">
-    <input type="email" id="ea-email" placeholder="you@company.com" required>
+  <form class="ea-form ea-form-full" id="ea-form">
+    <div class="ea-row">
+      <input type="text" id="ea-name" placeholder="Your name" autocomplete="name" required>
+      <input type="email" id="ea-email" placeholder="you@company.com" autocomplete="email" required>
+    </div>
+    <textarea id="ea-why" rows="3" placeholder="What do you want to run on it? A coding fleet, research swarms, a compliance workflow…" required></textarea>
+    <input type="text" id="ea-company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
     <button type="submit" class="btn btn-primary">Join early access</button>
+    <p class="mono fine" id="ea-status" hidden></p>
   </form>
-  <p class="fine">Opens your mail app with a prefilled note — or write us directly at <a href="mailto:join@nautlense.com" style="color:var(--accent-text)">join@nautlense.com</a>. Free during early access, small onboarding waves.</p>
+  <p class="fine">Free during early access · small onboarding waves · or write us at <a href="mailto:join@nautlense.com" style="color:var(--accent-text)">join@nautlense.com</a></p>
 </section>
 
 <footer class="footer">

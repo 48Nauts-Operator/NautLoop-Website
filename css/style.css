@@ -181,8 +181,18 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.02em; 
 .legal .tldr p { margin: 0; color: var(--ink); }
 
 /* early-access form */
-.ea-form { display: flex; gap: 12px; padding-top: 8px; width: min(520px, 100%); }
-.ea-form input { flex: 1; padding: 14px 18px; border: 1px solid var(--border); border-radius: 10px; background: var(--card); color: var(--ink); font-family: 'Inter', sans-serif; font-size: 15px; outline: none; }
+.ea-form { display: flex; gap: 12px; padding-top: 8px; width: min(560px, 100%); align-items: stretch; }
+.ea-form-full { flex-direction: column; }
+.ea-row { display: flex; gap: 12px; }
+.ea-row input { flex: 1; }
+.ea-form textarea { padding: 14px 18px; border: 1px solid var(--border); border-radius: 10px; background: var(--card); color: var(--ink); font-family: 'Inter', sans-serif; font-size: 15px; outline: none; resize: vertical; min-height: 84px; }
+.ea-form textarea:focus { border-color: var(--accent); }
+.ea-form textarea::placeholder { color: var(--faint); }
+.ea-form-full .btn { width: 100%; }
+#ea-status { text-align: left; }
+@media (max-width: 720px) { .ea-row { flex-direction: column; } }
+.ea-form input { flex: 1; height: 52px; padding: 0 18px; border: 1px solid var(--border); border-radius: 10px; background: var(--card); color: var(--ink); font-family: 'Inter', sans-serif; font-size: 16px; outline: none; }
+.ea-form .btn { height: 52px; padding-top: 0; padding-bottom: 0; }
 .ea-form input:focus { border-color: var(--accent); }
 .ea-form input::placeholder { color: var(--faint); }
 @media (max-width: 720px) { .ea-form { flex-direction: column; } }
