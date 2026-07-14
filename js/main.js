@@ -36,9 +36,10 @@ document.getElementById('ea-form').addEventListener('submit', async (e) => {
     );
     const href = 'mailto:join@nautlense.com?subject=' +
       encodeURIComponent('NautLoop early access') + '&body=' + body;
-    status.innerHTML = 'Direct submit isn\'t live yet — ' +
-      '<a href="' + href + '" style="color:var(--accent-text)">click here to send your signup by email</a> ' +
-      '(prefilled), or write to join@nautlense.com.';
+    window.location.href = href;
+    status.innerHTML = '✓ Almost done — send the prefilled email that just opened. ' +
+      'Nothing opened? <a href="' + href + '" style="color:var(--accent-text)">Click here</a> ' +
+      'or write to join@nautlense.com.';
     btn.disabled = false;
   }
 });
